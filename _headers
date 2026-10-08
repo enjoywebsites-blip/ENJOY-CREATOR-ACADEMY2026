@@ -1,0 +1,12 @@
+/* Security headers for Netlify. Equivalent headers should be configured in your hosting/CDN too. */
+/* Note: frame-src permits only the external video/learning services actually used by ECA. */
+/* /_headers */
+/*
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(self)
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://drive.google.com; connect-src 'self'; font-src 'self'; upgrade-insecure-requests
+*/
